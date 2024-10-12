@@ -30,6 +30,7 @@ class BlogPostListCreate(generics.ListCreateAPIView):
             serializer = BlogPostSerializer(blogpost, many=True)
             return Response(serializer.data)
         
+        
         if request.method == 'POST':
             serializer = BlogPostSerializer(data=request.data)
             #check if the data sent is  valid

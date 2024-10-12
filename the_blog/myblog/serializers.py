@@ -6,6 +6,7 @@ class BlogPostSerializer(serializers.ModelSerializer):
         model = BlogPost
         fields = ['id', 'title', 'author', 'content', 'published_date', 'category']
 
+
 class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:
        model = CustomUser
